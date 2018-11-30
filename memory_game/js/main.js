@@ -1,6 +1,3 @@
-console.log("User flipped " + "king");
-console.log("User flipped " + "queen");
-
 var cards = [
 {
 	rank: "queen",
@@ -33,6 +30,7 @@ var checkForMatch = function(){
     }
     var cardsInPlay = [];
 };
+};
 
 var flipCard = function() {
 	var cardID = this.getAttribute('data-id');
@@ -48,7 +46,7 @@ var flipCard = function() {
 console.log(cardInPlay);
 
 var createBoard = function(){
-for (var i = 0; i < cards.length; i++);{
+for (var i = 0; i < cards.length; i++){
 var cardElement = document.createElement("img"),
 	cardElement.setAttribute('src', "images/back.png");
 	cardElement.setAttribute("data-id", i);
